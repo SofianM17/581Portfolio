@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Open+Sans&family=Rubik:wght@700&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;background-color: #fafaff;
+    color: #23252f;
+    
+}
+
+.intro h1{
+    font-size: 30px;
+    width: 30vw;
+}
+.intro h2{
+    font-size: 40px;
+    
+    width: 30vw;
+}
+
+.intro{
+    margin-left: 27%;
+    margin-top: 20vh;
+    line-height: 50px;
+}
+#dev{
+   
+    background: -webkit-linear-gradient(rgb(195, 1, 115), rgb(141, 1, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#lrn{
+   
+    background: -webkit-linear-gradient(rgb(25, 187, 119),rgb(3, 184, 216));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#adv{
+   
+    background: -webkit-linear-gradient(rgb(219, 76, 10),rgb(230, 207, 6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.avatar-cont{
+    position: relative;
+    height: 10vh;
+}
+.avatar{
+    background-image: url(/media/Avatar1.PNG);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 280px;
+    height: 320px;
+    bottom: 30%;
+    left: 58%;
+    background-size: 100%;
+}
+
+.projects, .about{
+    
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    width:46vw;
+}
+
+.projects h2, .about h2{
+    font-size: 40px;
+    font-weight: bold;
+    left: 26vw;
+    color: white;
+    background-color: transparent;
+    padding-top: 1%;
+    padding-left: 3%;
+}
+
+.hdng-container{
+    height: 80px;
+    border-radius: 50px;
+    margin-right: 3%;
+    background-color: #FA8BFF;
+    /*background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);*/
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--c1, #FA8BFF), var(--c2, #2BD2FF) 51%, var(--c1, #2bffbf)) var(--x, 0)/ 100%;
+    box-shadow: 0 0 20px #eee;
+}
+
+.hdng-container:hover{
+    background: linear-gradient(90deg, var(--c1, #FA8BFF), var(--c2, #2BD2FF) 51%, var(--c1, #2bffbf)) var(--x, 100%)/ 200%;
+}
+
+.grid-cont{
+    display: grid;
+    width: 45vw;
+    margin-top: 0vh;
+    padding-right: 5%;
+    padding-left: 1%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-items: center;
+    gap: 20px;
+    
+}
+
+
+.asgn-container{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 45vw;
+    margin-top: 3vh;
+    height: auto;
+}
+
+.asgn-container:hover{
+    overflow-y: scroll;
+}
+
+#a1, #a2, #a3{
+    transition: 0.5s;
+    color: #23252f;
+    background: white;
+    filter: drop-shadow(10px 10px 10px #23252f07);
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
+    
+
+}
+
+#a1:hover, #a2:hover, #a3:hover{
+    background: #3b3a51;
+}
+
+#a1:hover h3, #a2:hover h3, #a3:hover h3, #a1:hover p, #a2:hover p, #a3:hover p, #a1:hover .details, #a2:hover .details, #a3:hover .details{
+    color: rgb(255, 255, 255);
+}
+
+.asgn-card:hover .details{
+    text-decoration: underline;
+}
+
+.asgn-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+.asgn-card h3{
+    background-color: transparent;
+    text-align: center;
+    font-size: 31px;
+    font-family: 'Gochi Hand', cursive;
+    font-weight: normal;
+}
+
+.asgn-card p{
+    text-align: center;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    line-height: 1.5rem;
+    margin-top: 2%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.details{
+    font-weight: bolder;
+    background: transparent;
+    font-size: large;
+}
+
+#a3{
+    grid-column: span 2;
+    width: 100%;
+    height: 30vh;
+}
+
+.about-desc p{
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+
+    margin-top: 3vh;
+    line-height: 1.5rem;
+    text-align: center;
+    width: 97%;
+    
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.about-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.about-desc a{
+    margin-top: 5%;
+    margin-bottom: 3vh;
+    cursor: pointer;
+}
+
+.about-desc i{
+    color: #0277b7;
+}
