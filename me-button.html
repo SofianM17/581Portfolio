@@ -12,7 +12,25 @@
         <nav class="nav">
             <ul>
                 <li>
-                    Home
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#si">
+                        Concept Sketches
+                    </a>
+                </li>
+                <li>
+                    <a href="#sv">
+                        Variation Sketches
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/JLiao98/covid-simulation" style="color:rgb(253, 113, 195)">Source Code</a>
+                </li>
+                <li>
+                    <a href="https://play.unity.com/mg/other/covid-simulation" style="color:rgb(253, 113, 195)">Our Program</a>
                 </li>
             </ul>
         </nav>
@@ -23,16 +41,24 @@
         </h1>
 
         <div class="info-bar">
-            <h5>
-                Technology: Unity
-            </h5>
+            <div class="info-bar-cont">
+                <h5>
+                    Technology: Unity
+                </h5>
+                <h5>
+                    Team: Sofian Mustafa, Jian Liao, Mohammad Al Sharbati
+                </h5>
+                <h5>
+                    Date: October 2, 2021
+                </h5>
+            </div>
         </div>
 
         <div class="demo">
             <h2>
                 Demo
             </h2>
-            <video src="" controls></video>
+            <video src="" controls width="1175"></video>
         </div>
 
         <div class="problem-desc">
@@ -40,47 +66,16 @@
                 The Problem
             </h2>
             <p>
-                We were tasked with creating an application where the central interaction is with a button.
+                We were tasked with creating an application where the central interaction is with a button. This button had to represent personality or character traits of a person or group of people.
                 <br>
-                This button had to represent personality or character traits of a person or group of people.
+                <br>
+                The group we chose to design our implementation for are the people who require more motivation to accept vaccination, often categorized as 'anti-vaxxers' or 'vaccine-hesitants'.
+                This project simulates the spread of Covid-19 at the University of Calgary campus using statistical data and probabilities associated with the spread of Covid-19 to attempt to help
+                the general public understand the severity of the situation.
             </p>
         </div>
 
-        <div class="sketches-ideas">
-            <h2>
-                Sketches
-            </h2>
-            <p>
-                We started by sketching ideas that would solve the problem:
-            </p>
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-        </div>
-
-        <div class="sketches-variations">
-            <p>
-                Then, we narrowed down our ideas and sketched variations for those we liked best:
-            </p>
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-        </div>
-
+        
         <div class="our-solution">
             <h2>
                 The Solution
@@ -88,10 +83,201 @@
             <p>
                 We developed a practical program that simulates the spread of COVID-19 at the University of Calgary campus.
                 <br>
-                Clicking our 'me button' vaccinates a proportion of the simulated students and the results of increasing vaccinations are
-                updated in real-time.
+                Clicking our 'me button' vaccinates a proportion of the simulated university population and the results of increasing vaccinations on the overall population's health
+                can be seen in real-time. Results of not vaccinating at all can also be observed by clicking individual particles to 'infect' them and observing the spread of the disease.
+                Furthermore, quarantine and mask mandates can be enabled / disabled and social distancing and time of contact between people are parameters that can be adjusted to show how the spread is affected as well.
+                
+                Our application's interface also allows the user to see real-time data regarding the infection / vaccination status of the population (i.e. healthy, infectious, incubation, confirmed, and vaccinated cases and infection rate).
                 
             </p>
+        </div>
+
+        <div class="sketches-ideas" id="si">
+            <h2>
+                Concept Sketches
+            </h2>
+            <p>
+                We started by sketching ideas that would solve the problem, with consideration for many groups / characters: 
+            </p>
+            <div class="img-grid">
+                <div class="sketch-item">
+                    <img src="Media/Nemo.jpg" width="400">
+                    <p class="sketch-p">
+                        1. Based on Nemo from Finding Nemo, clicking on Nemo would cause him to swim through the reef, allowing him to swim further with each click. A visually stunning
+                        artistic representation of a reef would scroll in the background as Nemo swims, until it eventually ends with the open ocean.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Spongebob.jpg" width="400">
+                    <p class="sketch-p">
+                        2. Based on Spongebob's fascination with blowing bubbles, clicking on Spongebob would allow him to blow a bubble, with each click producing a unique, randomly shaped bubble.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Pooh.jpg" width="400">
+                    <p class="sketch-p">
+                        3. Based on Winnie-the-Pooh's diet of honey, Pooh will eat a handful of honey each time he is clicked, until the bowl of honey is finished, at which point an animation representing
+                        a satisfied Pooh would appear.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Joker.jpg" width="400">
+                    <p class="sketch-p">
+                        4. Based on the Joker, various parts of the Joker's face could be clicked to interchange between features from different interpretations of the Joker from various movies and shows.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Jordan.jpg" width="400">
+                    <p class="sketch-p">
+                        5. Based generally on basketball players, this simple implementation requires clicking on a basketball to shoot it into the hoop, with all shots entering the net.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Simpsons.jpg" width="400">
+                    <p class="sketch-p">
+                        6. Based on Homer Simpson's famous craze for donuts, this implementation simply shows a donut being munched on, more with each click, until the donut has been consumed completely. 
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Trudeau.jpg" width="400">
+                    <p class="sketch-p">
+                        7. Based on Trudeau's 2021 election, this implementation simulates an election by allowing the user to play as a party and click electoral districts to 'win' them in a turn-based strategy style. 
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Minecraft.jpg" width="400">
+                    <p class="sketch-p">
+                        8. Based on the Minecraft player 'Steve', clicking on a dirt block on the grid reveals a metal. The goal of the user is to find the specified metals within the limited tries.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/It.jpg" width="400">
+                    <p class="sketch-p">
+                        9. Based on Stephen King's 'It', clicking on It's balloon pumps it, though click it too many times and it will pop.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Tigger.jpg" width="400">
+                    <p class="sketch-p">
+                        10. Based on Tigger, clicking on Tigger makes him hop, with multiple clicks causing larger bounces.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sketches-variations" id="sv">
+            <div class="img-grid2">
+                <h2>
+                    Variation Sketches
+                </h2>
+                <p>
+                    We narrowed down our ideas to the Covid-19 simulation idea by Jian because we agreed that this idea was the most practical and useful out of all of our concepts,
+                    and it is applicable to the real world with a real use case.
+                </p>
+                <div class="sketch-item">
+                    <img src="Media/Jian-original-idea.jpg" width="500">
+                    <p class="sketch-p">
+                        The original sketch idea by Jian for a Covid-19 simulator (chosen idea).
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Sofian-Variations.jpg" width="500">
+                    <p class="sketch-p">
+                        These three sketches are my own variations of Jian's original idea.
+                        <br>
+                        <br>
+                        1. The first variation requires quickly clicking on the Covid-19 molecules to eliminate them all before the person's outline fills completely with red, acting as a health bar.
+                        The covid molecules generate continuously and randomly unless the user clicks (and eliminates) all of the molecules before a new one appears. This variation, while not implemented
+                        because it was more entertaining than it was educational, contributed the idea of using the color red for infected individuals in the final implementation and also gave us the idea for clicking
+                        on individuals to infect them with covid to observe the spread of the disease (versus clicking on the covid molecules to eliminate them, an inverse situation).
+                        <br>
+                        <br>
+                        2. The second variation simply expanded on and contributed the idea of using color to distinguish between the infected, uninfected, and vaccinated. It maintains all other characteristics of the
+                        original idea by Jian.
+                        <br>
+                        <br>
+                        3. The third variation introduces the idea of having anti-vaxxers who simply cannot be vaxxinated due to their reluctance and can only carry and spread the virus. Because of logical complexity
+                        and time constraints, this idea was not implemented but it was highly considered.
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Moe-Variation1.jpg" width="500">
+                    <p class="sketch-p">
+                        4. This variation consists of randomly moving "particles" (people) where the user can click on them in order to vaccinate them, the particle would then turn green from gray (the default color).
+                        Randomly, one particle will turn red to signify them being infected by COVID-19 and if the user is not quick to vaccinate the rest of the particles, majority of them will soon be infected as the days progress (shown at the top).
+                        This variation introduced the idea of keeping track of some data such as the incubation and infected rates and the incubation period as well, where the infected stay in a "quarantine" (house).
+
+                        
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Moe-Variation2.jpg" width="500">
+                    <p class="sketch-p">
+                        5. This variation depicts an anti-vaxxer and pro-vaxxer (who is vaccinated) and the user is given options to either 'vaccinate' or 'infect' the anti-vaxxer, and depending on what the user chooses, they will see how this affects the anti-vaxxer.
+                        A good ending is if they pick 'vaccinate' which leads to the anti-vaxxer being happy and healthy in the long term, and the bad ending is when 'infect' is chosen, which may cause failing health or death.
+                        The pro-vaxxer is there mostly there for show and the user can reward them with money for being responsible and getting vaccinated. This idea had an element of bias and did not necessarily use science or research to demonstrate the impacts
+                        of remaining unvaccinated, which is why we did not proceed with this idea.
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Moe-Variation3.jpg" width="500">
+                    
+                    <p class="sketch-p">
+                        6. This variation depicts 3 areas representing populations labeled as "Vaxxed/Healthy", "Unvaxxed", and "Infected" where the user has option to 'Vax' the unvaxxed population and to 'Quarantine' the infected population.
+                        Each of these buttons can be clicked an arbitrary amount of times and depending on this amount, the borders (size of population) will adjust accordingly. For example, if the user decides to vaccinate and quarantine the corresponding populations,
+                        eventually the "Vaxxed/Healthy" population will grow larger and larger while the other two shrink in size. If the user does not perform any action, eventually as the days pass on, the "Infected" population will cover majority of the total area.
+                        This variation contributed to the idea of quarantining and seperating the infected from the rest of the population.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Mask.jpg" width="500">
+                    <p class="sketch-p">
+                        7. This variation is centered around the effects of wearing the mask for the person themselves and those nearby them. The user can simply click the mask to take it off, and slowly COVID particles will spread, making the person uneasy and sick, and having that same
+                        effect on others nearby as well. A percentage of the spread rate is shown for both the mask on and off to further emphasize that mask policy can help. This was considered in our final implementation in regards to the mask policy and whether
+                        if enforced or not, plays a factor in the spread of COVID. This sketch is also my own variation on Jian's original idea.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Jian-var-2.jpg" width="500">
+                    <p class="sketch-p">
+                        8. The first refined sketch focuses on the map setting of the simulation. In order to be realistic, I designed the the map setting based on University of Calgary campus, including Engineering, ICT, Science Theatre, Math Science, Residence building and MacEvan Hall. Specifically, I also designed the Quarantine zone where to isolate the confirmed COVID cases. The reason why I designed these buildings is that, in the real world scenario, the students will continue in the cycle shown in this sketch. The student will firstly leave Residence, then go to class (randomly go to one of the 4 buildings), and then go to MacHall for dining, and lastly return to the Residence. In the meantime, if any students were confirmed covid cases, then they will go to the Quarantine zone.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/jian-var-1.jpg" width="500">
+                    <p class="sketch-p">
+                        9. The second refined sketch focuses on the infection rate of the simulation. Infection rate refers to the probability of an infectious student that can transmit COVID to any other healthy students. In the simulation system, there are 5 states in total: Healthy, Incubation, Infectious, Confirmed and Vaccinated. Firstly, Healthy students refers to the only subjects who can be infected by COVID. Secondly, Incubation refers to the subjects who are infected but currently in the window period (randomly picked from 3 to 7 days), and only until T-2 days then they become infectious (Eg. If the window period is 7 days, then the subjects can only be infectious starting from Day 5). Thirdly, as explained above, starting from T-2 day, the Incubation state will then move forward to Infectious state, with the infection rate of 2%. Fourthly, after the window period, the Infectious state will become the Confirmed (sick, symptomatic) state, with the infection rate of 5%. Finally, the Vaccinated state refers to who are vaccinated.
+                        <br>
+                        <br>
+                        I also took Social Distance and Contact Time into consideration. These two factors will have an huge effect the infection rate. The social distance is using Sigmoid Function to represent the influential factor of distance between the students, written as P(Distance) = 1/(1+e^(-x)). Since the Sigmoid Function is a special case of Logistic Distribution, it fits well with the influential factor of infection rate. Similarly, the contact time is using the cumulative distribution function of the exponential distribution to represent the influential factor of the contact time between the students, written as P(Time) = 1-e^(-t). Then we combine these two factors into one influential factor, written as P(Distance) * P(Time) = 1/(1+e^(-x)) * (1-e^(-t)). Then we could get the 3D graph shown below. As observed from the graph directly, the closer the distance and the longer the contact time, the combined factor is close to 1; the distance has more weight than the contact time since sigmoid function has a mutation near 5 and exponential distribution is smoother.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Jian-var-3.jpg" width="500">
+                    <p class="sketch-p">
+                        The third refined sketch focuses on the vaccination feature of the simulation. The original sketch was once the Vaccinate button is clicked, it will randomly choose 1% to 10% of the students to get vaccinated, and then it will show the animation of chosen students go toward to the vaccination station. And in the final implementation, since the animation is unnecessary, we remove the animation and just change the colours to green instead. And the vaccinated students will have better immunity than the unvaccinated students, the probability to infect a vaccinated students is 2% * 5% = 0.1%, assume Pfizer protective rate is 95%. Then we could also perform tests on the Herd Immunity, according to WHO, it has to be 70% at least to achieve herd immunity. We can do tests on 10%, 20%, 30%, 50%. 70%, 90%, 95%, etc…
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/jian-var-4.jpg" width="500">
+                    <p class="sketch-p">
+                        The fourth refined sketch focuses on the close contacts self-quarantine feature of the simulation. The close contacts refer to the students who are contacted closely with the COVID confirmed case. In the simulation, once a student is confirmed, the student will inform all of their close contacts (they might be healthy or incubation) to take self-quarantine immediately to help stop the spread. In the final implementation, we didn’t implement this feature since this feature is more complicated and we don’t have enough time. However, we could see this feature as an improvement in the future to make this simulation more persuasive.
+                    </p>
+                </div>
+                
+            </div>
+            
         </div>
 
         <div class="my-cont">
@@ -99,7 +285,23 @@
                 What I did
             </h2>
             <p>
-
+                <ul>
+                    <li>
+                        Assisted with debugging
+                    </li>
+                    <li>
+                        Contributed to interface design through discussion and sketches
+                    </li>
+                    <li>
+                        Designed and recorded the demo video
+                    </li>
+                    <li>
+                        Facilitated and contributed to discussion and ideas
+                    </li>
+                    <li>
+                        Provided limited support with unity development
+                    </li>
+                </ul>
             </p>
         </div>
 
