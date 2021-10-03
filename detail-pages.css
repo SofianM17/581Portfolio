@@ -130,6 +130,7 @@ header{
     height: 580vh;
     justify-items: center;
     align-content: center;
+    border: 2px solid black;
 
 }
 
