@@ -131,7 +131,6 @@ header{
     justify-items: center;
     align-content: center;
     margin-top: 4vh;
-    border: 2px solid black;
 
 }
 
@@ -155,7 +154,7 @@ header{
 .my-cont{
     width: 46vw;
     margin-bottom: 8vh;
-    margin-top: 10vh;
+    margin-top: 4vh;
 }
 
 .my-cont h2{
