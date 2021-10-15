@@ -128,7 +128,7 @@ body{
     overflow-x: hidden;
     width: 100%;
     margin-top: 3vh;
-    height: auto;
+    max-height: 750px;
 
 }
 
@@ -136,7 +136,7 @@ body{
     overflow-y: scroll;
 }
 
-#a1, #a2, #a3{
+#a1, #a2, #a3, #a4{
     transition: 0.5s;
     color: #23252f;
     background: white;
@@ -153,11 +153,11 @@ body{
 
 }
 
-#a1:hover, #a2:hover, #a3:hover{
+#a1:hover, #a2:hover, #a3:hover, #a4:hover{
     background: #3b3a51;
 }
 
-#a1:hover h3, #a2:hover h3, #a3:hover h3, #a1:hover p, #a2:hover p, #a3:hover p, #a1:hover .details, #a2:hover .details, #a3:hover .details{
+#a1:hover h3, #a2:hover h3, #a3:hover h3, #a1:hover p, #a2:hover p, #a3:hover p, #a4:hover p, #a1:hover .details, #a2:hover .details, #a3:hover .details, #a4:hover .details{
     color: rgb(255, 255, 255);
 }
 
