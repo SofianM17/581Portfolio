@@ -8,52 +8,86 @@
     color: #23252f;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header{
     margin-top: 3%;
-    margin-bottom: 3%;
-    height: 2vh;
-    display: flex;
-    justify-content: center;
+    height: 60px;
+    width: 100%;
+    max-width: 1360px;
+
 }
 
 .info-bar-cont h5{
-    margin-right: 2%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
 }
 
 .info-bar-cont{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 46vw;
+    width: 90%;
+    max-width: 80%;
+    font-size: medium;
     text-align: center;
+
     
 }
 .info-bar{
     margin-bottom: 2%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1350px;
+
 }
 
 .demo h2{
     margin-bottom: 2vh;
 }
 
+.demo{
+    position: relative;
+    width: 90%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+iframe{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
 .nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    width: 60vw;
-    height: 3vh;
+    width: 100%;
+    height: 100%;
     background-color: #23252f;
 }
 
 .nav ul li{
     list-style: none;
     background-color: #23252f;
+    
 }
 
 .nav ul li a{
     text-decoration: none;
-    margin-right: 75px;
+    margin-right: 37.5px;
+    margin-left: 37.5px;
     background-color: transparent;
     color: white;
 }
@@ -63,10 +97,14 @@ header{
 }
 
 .proj-info{
+    padding-top: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    max-width: 1360px;
+
     
 }
 
@@ -79,7 +117,8 @@ header{
     
     margin-top: 4vh;
     margin-bottom: 4vh;
-    width: 46vw;
+    width: 75%;
+    max-width: 1600px;
 }
 
 .problem-desc h2{
@@ -87,8 +126,9 @@ header{
 }
 
 .our-solution{
-    width: 46vw;
     margin-bottom: 4vh;
+    width: 75%;
+    max-width: 1600px;
 }
 
 .our-solution h2{
@@ -99,62 +139,62 @@ header{
     margin-bottom: 2vh;
 }
 
-.sketches-ideas p{
+.sketches-ideas p, .sketches-variations p{
     margin-bottom: 4vh;
+    text-align: center;
+    width: 80%;
 }
 .sketches-variations h2{
     margin-bottom: 2vh;
 }
-.sketches-ideas{
-    margin-bottom: 2vh;
+.sketches-ideas, .sketches-variations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
 }
 
-.sketches-variations{
-    margin-bottom: 2vh;
-}
+
 
 .img-grid{
     display: flex;
     flex-direction: column;
-    width: 46vw;
     height: 100%;
     justify-items: center;
     align-content: center;
 
 }
 
-.img-grid2{
-    display: flex;
-    flex-direction: column;
-    width: 46vw;
-    height: 100%;
-    justify-items: center;
-    align-content: center;
-    margin-top: 4vh;
-
-}
-
-.img-grid2 p{
+.img-grid2 p, .img-grid p{
     margin-bottom: 3vh;
 }
 
 
 .sketch-item{
     display: flex;
-    margin-top: 2%;
+    flex-direction: column;
+    margin-bottom: 3vh;
     justify-content: center;
     align-items: center;
 }
 
 .sketch-p{
-    width: 25%;
+    width: 80%;
+    max-width: 700px;
     margin-left: 2%;
+    margin-top: 3vh;
+}
+
+
+.sketch-item img{
+    width: 90%;
+    max-width: 700px;
 }
 
 .my-cont{
     width: 46vw;
     margin-bottom: 8vh;
-    margin-top: 4vh;
 }
 
 .my-cont h2{
@@ -162,6 +202,6 @@ header{
 }
 
 .my-cont ul li{
-    list-style: none;
+    list-style:circle;
     line-height: 30px;
 }
