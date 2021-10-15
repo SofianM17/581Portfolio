@@ -6,6 +6,7 @@
     margin: 0px;
     padding: 0px;background-color: #fafaff;
     color: #23252f;
+    scroll-behavior: smooth;
 }
 
 body{
