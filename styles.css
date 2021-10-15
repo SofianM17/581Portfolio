@@ -80,7 +80,7 @@ body{
     
     margin: 0 auto;
     margin-bottom: 5vh;
-    width:90%;
+    width:95%;
     max-width: 1200px;
 }
 
@@ -128,7 +128,7 @@ body{
     overflow-x: hidden;
     width: 100%;
     margin-top: 3vh;
-    max-height: 750px;
+    max-height: 600px;
 
 }
 
