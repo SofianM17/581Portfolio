@@ -27,6 +27,7 @@ body{
     height: 100%;
     margin-bottom: 5vh;
     margin-top: 4vh;
+    font-size: medium;
 }
 
 .intro{
@@ -76,12 +77,12 @@ body{
 }
 
 .projects h2, .about h2{
-    font-size: 40px;
+    font-size: xx-large;
     font-weight: bold;
     left: 26vw;
     color: white;
     background-color: transparent;
-    padding-top: 1%;
+    padding-top: 1.5%;
     padding-left: 3%;
 }
 
@@ -170,6 +171,7 @@ body{
     font-size: 31px;
     font-family: 'Gochi Hand', cursive;
     font-weight: normal;
+    font-size: xx-large;
 }
 
 .asgn-card p{
@@ -177,7 +179,7 @@ body{
     background: transparent;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
-    font-size: large;
+    font-size: medium;
     line-height: 1.5rem;
     margin-top: 2%;
     padding-right: 10%;
@@ -187,7 +189,7 @@ body{
 .details{
     font-weight: bolder;
     background: transparent;
-    font-size: large;
+    font-size: medium;
 }
 
 #a3{
@@ -200,7 +202,7 @@ body{
 
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
-    font-size: large;
+    font-size: medium;
 
     margin-top: 3vh;
     line-height: 1.5rem;
