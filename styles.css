@@ -24,7 +24,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 400px;
+    margin-bottom: 5vh;
+    margin-top: 4vh;
 }
 .intro h1{
     font-size: 30px;
@@ -32,12 +34,10 @@ body{
 }
 .intro h2{
     font-size: 40px;
-
     width: 30vw;
 }
 
 .intro{
-    margin-top: 20vh;
     line-height: 50px;
 }
 #dev{
@@ -112,7 +112,6 @@ body{
 .grid-cont{
     display: grid;
     width: 100%;
-    margin-top: 0vh;
     padding-right: 5%;
     padding-left: 1%;
     grid-template-columns: 50% 50%;
