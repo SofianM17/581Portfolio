@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detail-pages.css">
+    <title>Unlock Interfaces</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#si">
+                        Concept Sketches
+                    </a>
+                </li>
+                <li>
+                    <a href="#sv">
+                        Variation Sketches
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="proj-info">
+
+        <div class="info-bar">
+            <h1>
+                Unlock Interfaces
+            </h1>
+            <div class="info-bar-cont">
+                <h5>
+                    Technologies: Javascript, CSS, HTML
+                </h5>
+                <h5>
+                    Team: Sofian Mustafa, Juan Pablo, Mohammad Al Sharbati
+                </h5>
+                <h5>
+                    Date: October 29, 2021
+                </h5>
+            </div>
+        </div>
+
+        <div class="demo">
+
+            <iframe
+            src="https://www.youtube.com/embed/F9b80QzxY3Q">
+            </iframe>
+
+        </div>
+        <div class="code-info">
+            <a href="http://cpsc581.p2.2.osloz.com">Project</a>
+            <a href="https://github.com/Tutadit/CPSC581-P2-Sensor">Source code</a>
+        </div>
+        
+        
+        <div class="demo" id="d2">
+
+            <iframe
+            src="https://www.youtube.com/embed/e5yCr00qM7M">
+            </iframe>
+
+        </div>
+
+        <div class="code-info">
+            <a href=" http://cpsc581.p2.1.osloz.com">Project</a>
+            <a href="https://github.com/Tutadit/CPSC581-P2-GestureMultiTouch">Source code</a>
+        </div>
+
+        <div class="problem-desc">
+            <h2>
+                The Problem
+            </h2>
+            <p>
+                We were tasked with creating a touch-based and another sensor-based interface for unlocking a mobile phone
+                in a way similar to 'slide to unlock'. Animation had to be used to provide feedback to the user, and both
+                techniques needed to avoid accidental activation.
+            </p>
+        </div>
+
+        
+        <div class="our-solution">
+            <h2>
+                The Solution
+            </h2>
+            <p>
+                We first developed a sensor-based implementation that utilizes the phone's gyroscopic sensor to illuminate the edge of the phone that the user tilts towards
+                and unlocks the phone using pattern recognition. Initially to unlock the phone, a pre-made pattern is shown to the user and the user must replicate this pattern
+                by tilting the phone to illuminate the edges in the same order as shown. Then, the user can set a custom illumination pattern in the phone's settings
+                and choose to make this custom pattern visible (i.e. allow it to be played before entry for reference) or hide it completely for the next time that the phone is unlocked. Accidental activation is avoided by the complexity
+                of replicating a unique pattern by tilting the phone in various directions.
+                <br>
+                <br>
+                We then developed a gesture-based implementation that requires touching and holding a bubble and filling it according to a pattern of 'levels' within the bubble,
+                essentially a series of circles of varying diameters within the main bubble. Authentication using
+                custom patterns is also possible with this implementation.
+                
+            </p>
+        </div>
+
+        <div class="sketches-ideas" id="si">
+            <h2>
+                Concept Sketches
+            </h2>
+            <p>
+                We started by sketching ideas that would solve the problem, with consideration for both gesture / multitouch based and sensor based implementations.
+                These are 10 of my own initial concept sketches, which I pitched to and shared with the project team as possible solutions.
+            </p>
+            <div class="img-grid">
+                <div class="sketch-item">
+                    <img src="Media/Proj2/HoldBubble_Gesture.jpg" width="400">
+                    <p class="sketch-p">
+                        1. This sketch portrays the idea of clicking and holding a 'bubble' or circle on the screen. While the bubble is being held, it will be filled with a random colour,
+                        and while not being held, the color will retract until the bubble returns to its original empty state. To unlock the phone, the user would hold the bubble until it has
+                        completely been filled, at which point the phone would unlock.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj2/RotateObject_Gesture.jpg" width="400">
+                    <p class="sketch-p">
+                        2. This implementation would simply require the user to rotate the randomly displayed object to an upright position by repeatedly tapping it until it is straight. Once the
+                        object is positioned correctly, the user's phone would unlock.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj2/RotateObject_Sensor.jpg" width="400">
+                    <p class="sketch-p">
+                        3. This idea also requires rotating an object until it is positioned straight to unlock the phone, though this implementation would require using the phone's gyroscope sensor to turn the object
+                        rather than multitouch input from the user. Tilting the phone right or left would turn the object accordingly, and the object will 'snap' into place once it is held straight
+                        by the user for a few seconds so micromovements detected  by the phone's gyroscopic sensor do not make unlocking a difficult process.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SolveMath_Gesture.jpg" width="400">
+                    <p class="sketch-p">
+                        4. This sketch portrays the idea of drawing an answer to a simple, random math equation onto the screen to unlock the phone.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj2/VerticalDegrees_Sensor.jpg" width="400">
+                    <p class="sketch-p">
+                        5. This implementation would require tilting the phone to a required angle to unlock it. The app would display the degrees the phone is currently tilted using the phone's 
+                        gyroscopic sensor, and the displayed degree would be colored red, green, or a color in between (i.e. yellow) indicating how close / far the user is from the required angle.
+                        Once the user tilts the phone to the correct angle and holds it at that angle for a few seconds, the phone will unlock.
+
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj2/DrumPads_Gesture.jpg" width="400">
+                    <p class="sketch-p">
+                        6. This app would display a pattern of drum pads to play using a sequence of colors that lights up the displayed drum pads in a random order. Once the user has replicated this pattern,
+                        the phone will unlock. Each pad will also produce a different sound such as a kick, snare, hi hat, etc.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj2/TurnPhone_Sensor.jpg" width="400">
+                    <p class="sketch-p">
+                        7. This sketch depicts the idea of turning the phone like a key - holding it in front of you horizontally and then turning it clockwise - to unlock the phone. This 
+                        implementation would make use of the phone's gyroscopic sensors.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj2/Smile_Sensor.jpg" width="400">
+                    <p class="sketch-p">
+                        8. Designed to encourage smiling, this implementation would make use of the phone's front camera and unlock the device if the user's smile was detected.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj2/Translate_Sensor.jpg" width="400">
+                    <p class="sketch-p">
+                        9. The implementation that this sketch depicts would use the phone's microphone to listen for the name of the object shown to the user in the language
+                        selected. The user could select from a few available languages to say the name of the object in, and this app would be extremely beneficial in helping
+                        the user build their vocabulary in a language they wish to learn. 
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj2/StabilizeBoat_Sensor.jpg" width="400">
+                    <p class="sketch-p">
+                        10. This app would require using the phone's gyroscopic sensor to bring turbulent waves under control
+                        by turning the phone in the direction opposite to the wave until the boat is stabilized.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sketches-variations" id="sv">
+            <h2>
+                Variation Sketches
+            </h2>
+            <p>
+                We narrowed down our ideas to my own idea of filling a bubble to unlock the phone (multitouch implementation) and to
+                Juan Pablo's edge illumination (sensor-based implementation) idea.
+            </p>
+            <div class="img-grid">
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/Simon_says.jpg" width="500">
+                    <p class="sketch-p">
+                        The original sketch for the illuminate edges to unlock idea by Juan Pablo.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/Simon_Says_Slick.jpg" width="500">
+                    <p class="sketch-p">
+                        1. This variation of the initial edge illumination idea focuses on adding aesthetic appeal to the original 
+                        design idea by making the light bars slicker and appear more as a diffused glow rather than as colored blocks. This
+                        idea was implemented into the final version of the interface.
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/SimonSaysVar.jpg" width="500">
+                    <p class="sketch-p">
+                       2. This variation introduces the idea of showing a unique pattern rather than replicating a previously shown pattern to unlock the phone. This
+                       is to add an element of security / authentication to <i>unlock</i> the phone rather than a way to simply exit the lockscreen. This
+                       variation helped us incorporate the idea of setting unique patterns and toggling if the pattern will initially be displayed or not
+                       to add an element of security to the interface.
+
+                        
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/SimonSaysDetail.jpg" width="500">
+                    <p class="sketch-p">
+                        3. This detail introduces the idea having the ability to swipe down to display a new pattern. This variation
+                        helped us implement the idea of replaying the current pattern using touch input. We opted to have user-defined
+                        patterns rather than random patterns instead, though the idea of being able to 'play' the pattern remained the same
+                        from this variation.
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/SimonSaysVar1.jpg" width="500">
+                    
+                    <p class="sketch-p">
+                        4. This detail introduces the idea of prompting the user to inform them of if their attempted pattern was correct or incorrect.
+                        In our final implementation, we added a 'shaking' screen animation to inform the user that their attempt was incorrect.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/Simon_Says_Bubble.jpg" width="500">
+                    <p class="sketch-p">
+                        5. This variation reworks the idea of simply lighting the edge of the screenby tilting to tilting a bubble into
+                        an edge of the screen, with each edge having circles now instead of rectangular bars. This idea was influenced by our
+                        touch-based bubble idea, though we did not end up using it.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/FillBubbleVar.jpg" width="500">
+                    <p class="sketch-p">
+                        6. This variation of the bubble idea adds layers with varying diameters to the bubble. It also introduces the idea
+                        of holding and releasing to resize the bubble to different layers in a pattern to unlock the phone.
+                        This variation heavily influenced our final design of the touch-based implementation because it introduced the core 
+                        functionality that our final design has.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/Hold_To_Unlock_-_Pop_Balloon.jpg" width="500">
+                    <p class="sketch-p">
+                        7. This variation is similar to the original bubble idea - it requires touching and holding to expand a balloon
+                        instead of a circle, and the balloon pops to reveal the main screen. This idea was not implemented.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/HoldObjectVar2.jpg" width="500">
+                    <p class="sketch-p">
+                        8. This variation requires tapping and holding multiple circles to fill them rather than a single circle like in the original bubble idea. This idea was not implemented.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/HoldBubbleVar4.jpg" width="500">
+                    <p class="sketch-p">
+                        9. This variation requires holding a rope until a climber is able to successfully climb to the top of a cliff. It essentially displays
+                        a climbing animation. This variation of the multitouch bubble idea was abandoned.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj2/SelectedVars/BubbleVar3.jpg" width="500">
+                    <p class="sketch-p">
+                        10. Rather than filling a bubble by tapping and holding, this variation reveals the main screen from the lock screen when 
+                        the screen is tapped and held. This variation of the bubble idea was abandoned.
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="my-cont">
+            <h2>
+                What I did
+            </h2>
+            <p>
+                <ul>
+                    <li>
+                        Co-developed the sensor-based implementation using Javascript, CSS, and HTML.
+                    </li>
+                    <li>
+                        Contributed to interface design through discussion and sketches and through
+                        front-end design.
+                    </li>
+                    <li>
+                        Designed and recorded the demo video
+                    </li>
+                    <li>
+                        Facilitated and contributed to discussion and ideas
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+    </section>
+    
+</body>
+</html>
