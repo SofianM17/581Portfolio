@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detail-pages.css">
+    <title>Hardware Prototype - Description</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#si">
+                        Concept Sketches
+                    </a>
+                </li>
+                <li>
+                    <a href="#sv">
+                        Variation Sketches
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="proj-info">
+
+        <div class="info-bar">
+            <h1>
+                Hardware Prototype
+            </h1>
+            <div class="info-bar-cont">
+                <h5>
+                    Technologies: C++, Flutter, Dart, Tensorflow Lite, Teachable Machine
+                </h5>
+                <h5>
+                    Team: Sofian Mustafa, Jian Liao, Juan Pablo, Mohammad Al Sharbati
+                </h5>
+                <h5>
+                    Date: November 25, 2021
+                </h5>
+            </div>
+        </div>
+
+        <div class="demo">
+
+            <iframe
+            src="https://www.youtube.com/embed/qfRiqo7C8o0">
+            </iframe>
+
+        </div>
+        
+        <h2 style="margin-top: 2% ; margin-bottom: -0.5%"> Storyboard </h2>
+        <div class="demo" id="d2">
+            <iframe
+            src="https://www.youtube.com/embed/bIQ6u0mZ5qs">
+            </iframe>
+
+        </div>
+
+        <h2 style="margin-top: 2% ; margin-bottom: -0.5%"> Technical Demo </h2>
+        <div class="demo" id="d2">
+            <iframe
+            src="https://www.youtube.com/embed/PpL1CPLTaR8">
+            </iframe>
+
+        </div>
+
+        <div class="code-info" style="margin-top: 2%;">
+            <a href="https://github.com/Tutadit/CPSC581---I-m-all-ears">Actuator Source Code</a>
+            <a href="https://github.com/JLiao98/im_all_ears"> Sensor Source Code</a>
+        </div>
+
+        <div class="problem-desc">
+            <h2>
+                The Problem
+            </h2>
+            <p>
+                We were tasked with creating a physical prototype to solve an everyday problem. The problem
+                we chose was addressing the daily challenges faced by those who have loss of hearing, for which we 
+                developed a device that translates sound into feedback as vibration and digitally displayed text. Our solution aims to
+                take advantage of a person's stronger senses as an alternative to their weaker hearing.
+            </p>
+        </div>
+
+        
+        <div class="our-solution">
+            <h2>
+                The Solution
+            </h2>
+            <p>
+                We developed a wristband that uses machine learning to translate everyday sounds into vibrations
+                that can be felt on the wrist paired with a digital screen that displays the name and/or source of the sound as text.
+                This device serves mainly as an alert system that helps people with hearing loss become aware of sounds that are important to them, their safety, and their wellbeing.
+                
+            </p>
+        </div>
+
+        <div class="demo-explanation">
+            <h2 style="margin-bottom: 2vh">
+                Product Explanation
+            </h2>
+            <p>
+                Our prototype is a device that wraps around the user's wrist using a tightenable strap to assist their understanding of surrounding sounds using vibrating motors and an LCD screen for sensual and visual feedback.
+                <br>
+                <br>
+                Using machine learning, our device is able to translate detected sounds into on-screen text and vibrational response for feedback. We chose these two methods of feedback because while the display 
+                can provide information about sounds surrounding the user, it may be difficult to view in certain circumstances such as in bright conditions, whereas the using only vibration may not always stand out when the
+                user is actively performing other activities. Furthermore, vibration only captures the user's attention indicating that a sound was detected, but does not explain the sound. This is our team felt that this 
+                combination of output methods works excellently for our prototype.
+            </p>
+        </div>
+
+        <div class="demo-explanation">
+            <h2 style="margin-bottom: 2vh">
+                Product Technical Overview
+            </h2>
+            <p>
+                In order to make our device as small as possible, we decided to use a small microcontroller, specifically the WEMOS D1 mini board. Its Wi-Fi features proved to be useful to what we were aiming for.
+                <br>
+                <br>
+                We also utilized 3 vibration motors and an LCD screen.
+                We designed and implemented an enclosure for our prototype that would allow us to wear the device on our wrists (using an elastic fabric as the wrist band) and fitted the band with the 3 vibrations motors.
+                <br>
+                <br>
+                We also implemented an app utilizing a training model with Google's Teachable Machine, to recognize various everyday important sounds. We then connected the app to the MQTT server where we were able to send messages to the device in order to display content on the screen and vibrate one of the three motors
+            </p>
+        </div>
+
+        <div class="sketches-ideas">
+            <h2>
+                Development Photos
+            </h2>
+            <p>
+                Some photos capturing the development of our prototype:
+            </p>
+            <div class="img-grid">
+                <div class="sketch-item">
+                    <img src="Media/Proj3/TechShots/1.jpg" width="400">
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/TechShots/2.jpg" width="400">
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/TechShots/3.jpg" width="400">
+                </div>
+            </div>
+        </div>
+
+        <div class="sketches-ideas" id="si">
+            <h2>
+                Concept Sketches
+            </h2>
+            <p>
+                We started by sketching ideas that would solve the problem.
+                These are 10 of my own initial concept sketches, which I pitched to and shared with the project team as possible solutions.
+            </p>
+            <div class="img-grid">
+                <div class="sketch-item">
+                    <img src="Media/Proj3/Thermostat.jpg" width="400">
+                    <p class="sketch-p">
+                        1. This sketch portrays a thermostat that automatically detects and sets the temperature via its connection to the furnace. This
+                        device would, over time, learn the user's preferred temperature settings based on the ambient temperature, and would set those
+                        temperatures automatically and make better guesses with each use.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/Co2Monitor.jpg" width="400">
+                    <p class="sketch-p">
+                        2. This sketch portrays a device connected to an air purifier. It would monitor CO2 levels in the surrounding air and would then
+                        power on and adjust the intensity of the connected air purifier accordingly. It would differentiate safe levels of CO2 from dangerous
+                        ones and would be extremely useful in the world's most polluted cities for sustaining a healthy home environment.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/MotionSensor.jpg" width="400">
+                    <p class="sketch-p">
+                        3. With the increasing power consumption of modern computer components such as graphics cards and processors and the high power consumption of
+                        some desktop accessories, the device depicted in this sketch aims to reduce power consumption by cutting power to the devices when no one is detected
+                        at the desk by the motion sensor. It would be connected to a power strip which this device can power on or off depending on the feedback from the motion sensor.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/VoiceMemos.jpg" width="400">
+                    <p class="sketch-p">
+                        4. A voice recording-scheduling device that allows for voice memos to be recorded and played regularly or on specific days
+                        to serve as reminders for activities that will be performed on that day.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj3/Teleprompter.jpg" width="400">
+                    <p class="sketch-p">
+                        5. A teleprompter that tracks the user's speech, highlights spoken words to inform the user of what they have already said, and
+                        switches the text on the screen to the next set of text only once the current text has been spoken.
+
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj3/DietTracker.jpg" width="400">
+                    <p class="sketch-p">
+                        6. A device that uses AI and a camera to detect the meals being consumed over time, and this information is used to provide statistics about
+                        a person's eating habits to help them better understand what they eat and improve their diet.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj3/Crypto.jpg" width="400">
+                    <p class="sketch-p">
+                        7. A desk lamp and monitoring display where the colour of the light is indicative of the status of the user's selected market securites.
+                        The lamp will connect to the WiFi and will repeadatly fetch market information and change the color of the RGB light depending on the overall move for the selected securities.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj3/LearningBox.jpg" width="400">
+                    <p class="sketch-p">
+                        8. A cube with digital displays on each side displaying customizable concepts ranging from the alphabet to numerical digits
+                        to help facilitate learning for infants. The user must repeat what is displayed on the cube for the display to progress to the next item to be displayed.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj3/Hoops.jpg" width="400">
+                    <p class="sketch-p">
+                        9. A trash can that allows for some entertainment. Made for trash to be thrown into from a distance with an rgb light and buzzer indicator for when trash
+                        successfully enters the can.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj3/pomodoro.jpg" width="400">
+                    <p class="sketch-p">
+                        10. A smart timer designed to follow the pomodoro technique of time management. It utilizes a touch pad as the input from the user, where the timer begins by tapping on the tomato.
+                            It uses a beeper to indicate when the user should take a break; the break time is indicated by the number of beeps.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sketches-variations" id="sv">
+            <h2>
+                Variation Sketches
+            </h2>
+            <p>
+                We narrowed down our ideas to Jian's "I'm All Ears" idea because we agreed that this implementation would be the most practical for 
+                addressing the original problem since those who have loss of hearing face tremendous hardship on a daily basis.
+            </p>
+            <div class="img-grid">
+                <div class="sketch-item">
+                    <img src="Media/Proj3/vars/OriginalIdea.jpg" width="500">
+                    <p class="sketch-p">
+                        The original sketch for the "I'm All Ears" idea by Jian Liao.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj3/Vars/BehindView.jpg" width="500">
+                    <p class="sketch-p">
+                        1. A variation on Jian's "I'm all ears" idea, where instead of a headset, it is headphones that vibrate to provide sound awarness.
+                        There are three vibrator motors, one on each earphone and one on the middle of the wire connecting both earphones
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Proj3/Vars/ShakeAwake.png" width="500">
+                    <p class="sketch-p">
+                       2. This variation aims at providing those who are deaf or hard of hearing with an efficient way to wake up on time.
+                        It is a sheet that is placed under the matress that shakes when activated. The user would be able to set the time they wish to activate it as well as the strength of the shake.
+
+                        
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Proj3/vars/PhoneSoundAwareness.jpg" width="500">
+                    <p class="sketch-p">
+                        3. With this variation, the user is able to use their phone as a sound compass where they will be able to see various sounds as they occur around them.
+                        It utilizes the phone's microphone and accelerometer to display within the edge of the screen a message regarding the sound coming from the direction the edge points to.
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Proj3/Vars/SpatialSoundAwarnessHarness.jpg" width="500">
+                    
+                    <p class="sketch-p">
+                        4. This is a band that is able to be placed on any limb. It has vibrator motors that provide vibrational feedback as well as direction of sounds around the user.
+                            It uses vibrator motors to indicate where and what type of sound it detected.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/vars/SpeechText.png" width="500">
+                    <p class="sketch-p">
+                        5. This variation is intended to be used to get a live dictation of speech from within a close range. It is intended to be used by the deaf in cases where they are unable to read lips.
+                        It utilizes an LCD screen and a microphone to display speech on the digital display.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/vars/RingShake.png" width="500">
+                    <p class="sketch-p">
+                        6. This variation utilizes a small vibrator motor in a ring, as well as a microphone, to listen to and recognize sounds around the user.
+                        The user is able to set vibration patterns for various different sounds around them.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/Vars/RefinedSketch.jpg" width="500">
+                    <p class="sketch-p">
+                        7. Here is a sketch of a possible system implementation for the "I'm all Ears" idea. This design was inspired by our various variations and brainstorming sessions.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/vars/HearingTheMoment.jpg" width="500">
+                    <p class="sketch-p">
+                        8. Another idea that was inspired by "I'm all Ears" was to record when a sound that is of significance to the user, such as laughter or cheering, occurs.
+                        We would display the timeline of significant sound to the user through the use of an app, allowing important memories to be saved for the user to revisit.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/vars/HouseHoldListener.jpg" width="500">
+                    <p class="sketch-p">
+                        9. This is similar to the "I am all Ears" idea, but instead of a wearable, it is a home pod device. The device listens for important sounds around the house, such as a tap left running or the suspicion of an intruder.
+                        The device would send notifications to the user's phone and alert them when the sounds are detected.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj3/vars/MusicWithoutBarrier.jpg" width="500">
+                    <p class="sketch-p">
+                        10. With this variation, deaf people are able to enjoy music by feeling the music's rhythm as vibration. This idea is a hand-band that will provide the user with vibrational feedback on the music that is playing around them.
+                        Deaf people could use this to practice their singing too, as the device would pick up the notes being sung and provide accurate feedback via vibrations of varying intensities.
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="my-cont">
+            <h2>
+                What I did
+            </h2>
+            <p>
+                <ul>
+                    <li>
+                        Filmed, edited, and produced the product demo video and its sound design
+                    </li>
+                    <li>
+                        Contributed to prototype design through discussion and sketches
+                    </li>
+                    <li>
+                        Assisted in testing the prototype and in sourcing hardware components
+                    </li>
+                    <li>
+                        Facilitated and contributed to discussion and ideas
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+    </section>
+    
+</body>
+</html>
