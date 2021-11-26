@@ -231,3 +231,9 @@ iframe{
     margin-top: 2%;
     font-weight: bold;
 }
+
+.demo-explanation{
+    margin-bottom: 4vh;
+    width: 75%;
+    max-width: 1600px;
+}
