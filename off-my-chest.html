@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detail-pages.css">
+    <title>Communication Platform - Description</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#si">
+                        Concept Sketches
+                    </a>
+                </li>
+                <li>
+                    <a href="#sv">
+                        Variation Sketches
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="proj-info">
+
+        <div class="info-bar">
+            <h1>
+                Off My Chest - Communication Platform
+            </h1>
+            <div class="info-bar-cont">
+                <h5>
+                    Technologies: React, Firebase, IBM NLU API
+                </h5>
+                <h5>
+                    Team: Sofian Mustafa, Jian Liao, Juan Pablo, Mohammad Al Sharbati
+                </h5>
+                <h5>
+                    Date: December 22, 2021
+                </h5>
+            </div>
+        </div>
+
+        <div class="demo">
+
+            <iframe
+            src="https://www.youtube.com/embed/iW1Dls5oToA">
+            </iframe>
+
+        </div>
+        
+        <h2 style="margin-top: 2% ; margin-bottom: -0.5%"> Storyboard </h2>
+        <div class="demo" id="d2">
+            <iframe
+            src="https://www.youtube.com/embed/bIQ6u0mZ5qs">
+            </iframe>
+
+        </div>
+
+        <!-- <h2 style="margin-top: 2% ; margin-bottom: -0.5%"> Technical Demo </h2>
+        <div class="demo" id="d2">
+            <iframe
+            src="https://www.youtube.com/embed/PpL1CPLTaR8">
+            </iframe>
+
+        </div>
+        <div class="problem-desc" style="margin-bottom: 0;">
+            <p>
+                The 'I'm All Ears' mobile app listens to ambient sound and performs sound recognition with Teachable Machine, which then can send signals to the wristband using MQTT protocol. The reason why we chose the phone as the sensor input is that the phone has more computation power than micro-controllers and the resources were limited. The app also has implemented the feature of "Hearing The Moments", which allows people with hearing loss to keep track of the important sounds as timeline events in their everyday lives.
+            </p>
+        </div> -->
+
+        <div class="code-info" style="margin-top: 2%;">
+            <a href="https://github.com/JLiao98/off-my-chest-device">Input Platform Source Code</a>
+            <a href="https://github.com/Tutadit/Off-My-Chest"> Web Platform Source Code</a>
+        </div>
+
+        <div class="problem-desc">
+            <h2>
+                The Problem
+            </h2>
+            <p>
+                We were tasked with creating an interface that augments in-person or remote communication or collaboration. 
+                The problem we chose to address as part of this domain was helping address the thoughts, worries, or dilemmas that
+                people are afraid to share with others due to fears such as fear of judgement, yet which they require to do so in order to take 
+                a first step towards resolution by recieving advice and support from others in a way that is anonymous, secure,
+                and moderated.
+            </p>
+        </div>
+
+        
+        <div class="our-solution">
+            <h2>
+                The Solution
+            </h2>
+            <p>
+                To solve this problem, we created a system for anonymously and safely sharing your fears, worries, or bothers
+                to get them off of your chest, as the name of our system implies, and recieving support and advice for resolving them
+                because speaking about your problems and getting help is an important step towards resolution.
+                <br><br> 
+                The platform for the input device was developed for a device that would ideally be
+                accessible by the public for them to share their thoughts on the platform as they go about their day. It allows them to
+                record a message with an automatically generated transcription, analyze the emotions and keywords that describe what
+                they are feeling based on their recording, and post their recording to a public database where they can recieve feedback
+                and support from the 'Off Your Chest' community in a seamless and easy-to-do way.
+                <br><br> 
+                The social platform is for accessing the database of audio recordings posted by the public to listen to the problems people 
+                are experiencing to see what people in a similar position as you are experiencing, how they are overcoming their struggle, 
+                and for providing support or feedback to them via an audio or text-based comment. Thus, our system takes a collaborative approach
+                through anonymous interpersonal communication to help address mental health.
+            </p>
+        </div>
+
+        <!-- <div class="demo-explanation">
+            <h2 style="margin-bottom: 2vh">
+                Product Technical Overview
+            </h2>
+            <p>
+                In order to make our device as small as possible, we decided to use a small microcontroller, specifically the WEMOS D1 mini board. Its Wi-Fi features proved to be useful to what we were aiming for.
+                <br>
+                <br>
+                We also utilized 3 vibration motors and an LCD screen.
+                We designed and implemented an enclosure for our prototype that would allow us to wear the device on our wrists (using an elastic fabric as the wrist band) and fitted the band with the 3 vibrations motors.
+                <br>
+                <br>
+                We also implemented an app utilizing a training model with Google's Teachable Machine, to recognize various everyday important sounds. We then connected the app to the MQTT server where we were able to send messages to the device in order to display content on the screen and vibrate one of the three motors
+            </p>
+        </div> -->
+
+        <div class="sketches-ideas" id="si">
+            <h2>
+                Concept Sketches
+            </h2>
+            <p>
+                We started by sketching ideas that would solve the problem.
+                These are 10 of our team's initial concept sketches, which were pitched to and shared with the project team as possible solutions.
+            </p>
+            <div class="img-grid">
+                <div class="sketch-item">
+                    <img src="Media/Proj4/InterviewPrep.jpg" width="400">
+                    <p class="sketch-p">
+                        1. This sketch portrays an application that helps improve your interview-based communication skills by providing feedback on the 
+                        strength of your responses and on your level of confidence, by providing common interview questions from a database to help prepare
+                        you, and by helping you become a stronger candidate overall.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj4/keychain.jpg" width="400">
+                    <p class="sketch-p">
+                        2. This sketch demonstrates the idea of a pair of keychain devices where if one is tapped, the other glows. This
+                        device would act like a friendship charm to indicate to another person that you are thinking of them by tapping 
+                        your device from the pair, which would illuminate their device and remind them of you.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj4/CultureHub.png" width="400">
+                    <p class="sketch-p">
+                        3. This idea by Juan Pablo is essentially a blogging platform where users can collaborate on posts that promote and 
+                        drive cultural knowledge, which can span over a multitude of topics ranging from cuisine to fashion to music. This platform
+                        would allow you to communicate your interpretation or understanding of the culture with others to help build upon it.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj4/FriendsRadio.png" width="400">
+                    <p class="sketch-p">
+                        4. This drawing by Juan Pablo depicts the idea of a web interface that allows people to listen to music collaboratively with their friends. It would allow
+                        all members to contribute to a playlist, build various playlists, and listen to them at the same time.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Friend Detector.jpg" width="400">
+                    <p class="sketch-p">
+                        5. This sketch by Mohammad shows the idea of an app that detects and notifies you if one of your contacts is nearby. This would aid in 
+                        communication by allowing you to participate in events collectively or catch up with friends, and this app would notify you of an opportunity to do so.
+
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Place Recognizer.jpg" width="400">
+                    <p class="sketch-p">
+                        6. This sketch by Mohammad shows the idea of an app that would use the camera to detect a location and then present photos of shared memories with friends
+                        at that location to encourage you to contact and communicate with that person once again, or to remind you of shared memories that help strengthen your friendship.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj4/BodyLanguageInterpreter.jpg" width="400">
+                    <p class="sketch-p">
+                        7. Here, I sketched the idea of having a device that uses a camera and earpiece where the camera is used to detect the body language of another person, which is an important part of communication,
+                        and describes it via audio feedback to the user through the earpiece. This device is intended to facilitate communication for the blind.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj4/OffYourChest.jpg" width="400">
+                    <p class="sketch-p">
+                        8. A combination of an input device and web platform where the device would be used to anonymously communicate, through an audio recording, the worries, fears, feelings, or issues that members of the public may be facing.
+                        This recording would be uploaded to an online database where people can browse through these recorded posts to potentially help overcome their own struggles and to provide meaningful feedback to others
+                        that can help them overcome their issues.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj4/NoPoverty.jpg" width="400">
+                    <p class="sketch-p">
+                        9. No poverty land is a collaborative platform to help achieve the United Nation's substantial goal of no poverty by 2030.
+                        It would act as a global think tank where people with different skill sets and knowledge would give ideas on how to improve
+                        the infrastructure and economies of localities around the world.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj4/MetaverseShopping.jpg" width="400">
+                    <p class="sketch-p">
+                        10. Metaverse shopping would allow people to visit stores and communicate with employees and vendors virtually through a robot
+                        that would be physically present at the location controlled by a vr headset and controller.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sketches-variations" id="sv">
+            <h2>
+                Variation Sketches
+            </h2>
+            <p>
+                We narrowed down our ideas to Jian's "Off Your Chest" idea because we agreed that this implementation would be the most practical for 
+                addressing the original problem. This is because collaboration and communication is essential for addressing the mental health crises that is widespread
+                throughout society today due to the dominance of outdated and exploitative social and economic structures over our lives.
+            </p>
+            <div class="img-grid">
+                <div class="sketch-item">
+                    <img src="Media/Proj4/OffYourChest.jpg" width="500">
+                    <p class="sketch-p">
+                        The original sketch for the "Off Your Chest" idea by Jian Liao.
+                    </p>
+                </div>
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/Helpline.jpg" width="500">
+                    <p class="sketch-p">
+                        1. This variation of "Off Your Chest" would alert and give the option to contact a mental health helpline if the audio recording made by a person
+                        contained concerning material suggesting that someone was at their breaking point or, for example, was considering self harm. Additional resources
+                        would also be provided to struggling people, with the resources displayed depending on the content of the audio recording.
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/Ratings.jpg" width="500">
+                    <p class="sketch-p">
+                       2. This variation of "Off Your Chest" displays the idea of having a rating system for users of the web platform, who can make accounts to comment / reply on people's anonymous recordings. The
+                       user's rating would be based on the average of the like to dislike ratio across all comments they have made and it would be a useful resource for determining someone's 
+                       helpfulness or credibility on the platform.
+
+                        
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/Schedule.jpg" width="500">
+                    <p class="sketch-p">
+                        3. With this variation of "Off Your Chest", users of the publicly accessible input device would be able to schedule when they would like to make their post. This would
+                        give them some time to self-reflect on what they said, some of which they may not have expected to say, before receiving feedback from the "Off Your Chest" community via its
+                        online platform.
+                    </p>
+                </div>
+    
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/AudioVisualizer.jpg" width="500">
+                    
+                    <p class="sketch-p">
+                        4. This variation introduces the idea of simply adding an audio visualizer to see the recording as it progresses in real time.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/Category.jpg" width="500">
+                    <p class="sketch-p">
+                        5. With this variation, which was implemented, the user id able to sort recordings on the web platform by their category to more easily find recordings about topics that they are interested in or
+                        would like advice for. It also sorts the platform in a logical way so that it is more easily navigable.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/HelpfulPosts.jpg" width="500">
+                    <p class="sketch-p">
+                        6. This variation introduces the idea of suggesting posts to users based on the types of posts they most frequently listen to so that their user experience is better tailored to their preferences.
+                        Tracking user preferences could be used to refine the web platform in various ways, including a more user-specific dashboard that prominently displays categories that the user is interested in.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/Organization.jpg" width="500">
+                    <p class="sketch-p">
+                        7. This variation considers the app the device uses, where the posts are organized by keywords/groups, represented by bubbles. Each bubble is an audio post of an anonymous user with an associated
+                        keyword(s) indicating the tone/mood of the stories. Users can drag these bubbles to arrange/organize different posts, and upon clicking a bubble, the audio will be played.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/NLU.jpg" width="500">
+                    <p class="sketch-p">
+                        8. This variation involves the app the device uses. Using Natural Language Understanding (NLU) and the transcript from the recording, we can perform natural language processing (i.e. keywords extraction, sentimental analysis).
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/Transcription.jpg" width="500">
+                    <p class="sketch-p">
+                        9. This variation involves the actual recording from the user, where using speech to text will be utilized when the user is talking and recording. Upon clicking "Post" the device will upload both the audio file and the transcript from the recording.
+                    </p>
+                </div>
+
+                <div class="sketch-item">
+                    <img src="Media/Proj4/Vars/Device.jpg" width="500">
+                    <p class="sketch-p">
+                        10. This variation includes the communication device for the user to input their speech. In this case, an iPad is being used, supported on a tripod and a flat surface for the iPad to rest on. The basic idea of the application platform on the iPad is shown as well.
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="my-cont">
+            <h2>
+                What I did
+            </h2>
+            <p>
+                <ul>
+                    <li>
+                        Filmed, edited, and produced the product demo video
+                    </li>
+                    <li>
+                        Designed the front end for the mobile platform
+                    </li>
+                    <li>
+                        Contributed to overall system design through discussion and sketches
+                    </li>
+                    <li>
+                        Assisted in testing the system
+                    </li>
+                    <li>
+                        Facilitated and contributed to discussion and ideas
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+    </section>
+    
+</body>
+</html>
